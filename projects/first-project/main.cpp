@@ -3,7 +3,13 @@ using namespace std;
 
 int main() {
 
-cout << "Testing to see if this works" << endl;
+int x;
+int y;
+x = 10;
+y = 4;
+
+cout << x;
+
 
 
 
