@@ -17,10 +17,22 @@ private:
     double elevation;
 
 public: 
-    Mountain(string name, string country, double elevation) // FIXME
+    void setName(string mountainName);
+    void setCountry(string country);
+    void setElevation(double elevation);
+
+
 
     string getName() {
         return name;
+    }
+
+    string getCountry() {
+        return country;
+    }
+
+    double getElevation() {
+        return elevation;
     }
 
 
