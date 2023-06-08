@@ -17,11 +17,16 @@ private:
     double elevation;
 
 public: 
-    void setName(string mountainName);
-    void setCountry(string country);
-    void setElevation(double elevation);
+    void setName(string mountainName);   // Mutator
+    void setCountry(string country);     // Mutator
+    void setElevation(double elevation); // Mutator
+    string getName();                    // Accessor
+    string getCountry();                 // Accessor
+    double getElevation();               // Accessor
 
-
+    void Mountain::setName(string mountainName) {
+        name = mountainName;
+    }
 
     string getName() {
         return name;
