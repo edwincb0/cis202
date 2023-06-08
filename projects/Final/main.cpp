@@ -17,7 +17,7 @@ private:
     double elevation;
 
 public: 
-    void setName(string newMountainname);   // Mutator
+    void setName(string newName);           // Mutator
     void setCountry(string newCountry);     // Mutator
     void setElevation(double newElevation); // Mutator
     string getName();                       // Accessor
@@ -25,8 +25,8 @@ public:
     double getElevation();                  // Accessor
 
     // Setters
-    void Mountain::setName(string newMountainName) {
-        name = newMountainName;
+    void Mountain::setName(string newName) {
+        name = newName;
     }
 
     void Mountain::setCountry(string newCountry) {
