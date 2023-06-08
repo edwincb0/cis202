@@ -8,6 +8,7 @@ Mail: edwinc0482@student.vvc.edu
 
 #include <iostream>
 #include <string>
+#include <vector>
 using namespace std;
 
 class Mountain {
@@ -65,15 +66,23 @@ public:
 
 int main() {
     // 7 instances of Mountain objects
-   Mountain chimborazo("Chimborazo", "Ecuador", 20549.0);
-   Mountain matterhorn("Matterhorn", "Switzerland", 14692.0);
-   Mountain olympus ("Olympus", "Greece (Macedonia)", 9573.0);
-   Mountain everest ("Everest", "Nepal", 29029.0);
-   Mountain mountMarcy ("Mount Marcy - Adirondacks", "United States", 5344.0);
-   Mountain mountMitchell ("Mount Mitchell - Blue Ridge", "United States", 6684.0);
-   Mountain zugspitze ("Zugspitze", "Switzerland", 9719.0);
+    Mountain chimborazo("Chimborazo", "Ecuador", 20549.0);
+    Mountain matterhorn("Matterhorn", "Switzerland", 14692.0);
+    Mountain olympus ("Olympus", "Greece (Macedonia)", 9573.0);
+    Mountain everest ("Everest", "Nepal", 29029.0);
+    Mountain mountMarcy ("Mount Marcy - Adirondacks", "United States", 5344.0);
+    Mountain mountMitchell ("Mount Mitchell - Blue Ridge", "United States", 6684.0);
+    Mountain zugspitze ("Zugspitze", "Switzerland", 9719.0);
 
-
+    // Mountain objects are placed in a data structure
+    vector<Mountain> mountainData; 
+    mountainData.push_back(chimborazo);
+    mountainData.push_back(matterhorn);
+    mountainData.push_back(olympus);
+    mountainData.push_back(everest);
+    mountainData.push_back(mountMarcy);
+    mountainData.push_back(mountMitchell);
+    mountainData.push_back(zugspitze);
 
     return 0;
 }
