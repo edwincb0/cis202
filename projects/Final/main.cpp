@@ -65,7 +65,13 @@ public:
 
 int main() {
     // 7 instances of Mountain objects
-   
+   Mountain chimborazo("Chimborazo", "Ecuador", 20549.0);
+   Mountain matterhorn("Matterhorn", "Switzerland", 14692.0);
+   Mountain olympus ("Olympus", "Greece (Macedonia)", 9573.0);
+   Mountain everest ("Everest", "Nepal", 29029.0);
+   Mountain mountMarcy ("Mount Marcy - Adirondacks", "United States", 5344.0);
+   Mountain mountMitchell ("Mount Mitchell - Blue Ridge", "United States", 6684.0);
+   Mountain zugspitze ("Zugspitze", "Switzerland", 9719.0);
 
 
 
