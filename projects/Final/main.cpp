@@ -7,12 +7,18 @@ Mail: edwinc0482@student.vvc.edu
 */
 
 #include <iostream>
+#include <string>
 using namespace std;
 
+class Mountain {
+public: 
+
+
+    }
+
+
+
 int main() {
-
-
-
 
 
 
