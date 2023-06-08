@@ -17,6 +17,11 @@ private:
     double elevation;
 
 public: 
+    Mountain(string name, string country, double elevation) {   // Constructor
+        this->name = name;
+        this->country = country;
+        this->elevation = elevation;
+    }
     void setName(string newName);           // Mutator
     void setCountry(string newCountry);     // Mutator
     void setElevation(double newElevation); // Mutator
@@ -59,6 +64,8 @@ public:
 
 
 int main() {
+    // 7 instances of Mountain objects
+   
 
 
 
