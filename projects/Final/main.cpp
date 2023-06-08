@@ -50,6 +50,9 @@ public:
         return elevation;
     }
 
+    double toMeters() {
+        return elevation / 3.2908;
+    }
 
 };
 
