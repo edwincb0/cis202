@@ -11,10 +11,16 @@ Mail: edwinc0482@student.vvc.edu
 using namespace std;
 
 class Mountain {
+private:
+    string name;
+    string country;
+    double elevation;
+
 public: 
+    Mountain
 
 
-    }
+};
 
 
 
