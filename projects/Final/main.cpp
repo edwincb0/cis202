@@ -62,7 +62,16 @@ public:
 
 };
 
-
+// Method named minElevation that returns the minimum elevation
+Mountain minElevation (vector<Mountain> mountains) {
+    Mountain minMountain = mountains.at(0);
+    for (Mountain mountain : mountains) {
+        if (mountain.getElevation() < minMountain.getElevation()) {
+            minMountain = mountain;
+        }
+    }
+    return minMountain;
+}
 
 int main() {
     // 7 instances of Mountain objects
@@ -83,6 +92,14 @@ int main() {
     mountainData.push_back(mountMarcy);
     mountainData.push_back(mountMitchell);
     mountainData.push_back(zugspitze);
+
+    // Iterate over the data structure & print out its details
+    for (Mountain mountain : mountainData) {
+        cout << "Mountain: " << mountain.getName() << endl;
+        cout << "Country: " << mountain.getCountry() << endl;
+        cout << "Elevation (in feet): " << mountain.getElevation() << endl;
+        cout << "Elevation (in meters): " << mountain.toMeters() << endl;
+    }
 
     return 0;
 }
