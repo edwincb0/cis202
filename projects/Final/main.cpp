@@ -26,7 +26,6 @@ public:
     void setName(string newName);           // Mutator
     void setCountry(string newCountry);     // Mutator
     void setElevation(double newElevation); // Mutator
-    void Print();                           // Mutator
     string getName();                       // Accessor
     string getCountry();                    // Accessor
     double getElevation();                  // Accessor
@@ -104,6 +103,10 @@ int main() {
     }
 
     // Prints out elevation & name of shortest mountain
+    Mountain minElevMountain = minElevation(mountainData);
+    cout << "Shortest Mountain: " << minElevMountain.getName() << endl;
+    cout << "Elevation (in feet): " << minElevMountain.getElevation() << endl;
+    cout << "Elevation (in meters): " << minElevMountain.toMeters() << endl;
 
     return 0;
 }
