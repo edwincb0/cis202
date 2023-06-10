@@ -18,28 +18,20 @@ private:
     double elevation;
 
 public: 
-    Mountain(string name, string country, double elevation) {   // Constructor
-        this->name = name;
-        this->country = country;
-        this->elevation = elevation;
-    }
-    void setName(string newName);           // Mutator
-    void setCountry(string newCountry);     // Mutator
-    void setElevation(double newElevation); // Mutator
-    string getName();                       // Accessor
-    string getCountry();                    // Accessor
-    double getElevation();                  // Accessor
-
+    Mountain(string name, string country, double elevation)  // Constructor
+        : name(name), country(country), elevation(elevation) {
+        }
+    
     // Setters
-    void Mountain::setName(string newName) {
+    void setName(string newName) {
         name = newName;
     }
 
-    void Mountain::setCountry(string newCountry) {
+    void setCountry(string newCountry) {
         country = newCountry;
     }
 
-    void Mountain::setElevation(double newElevation) {
+    void setElevation(double newElevation) {
         elevation = newElevation;
     }
 
