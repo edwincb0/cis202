@@ -53,7 +53,6 @@ public:
 
 };
 
-
 // Method named minElevation that returns the minimum elevation
 Mountain minElevation (vector<Mountain> mountains) {
     Mountain minMountain = mountains.at(0);                         // This assumes that the 1st mountain has the minimum elevation
