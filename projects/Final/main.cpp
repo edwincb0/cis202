@@ -91,11 +91,12 @@ int main() {
         cout << "Country: " << mountain.getCountry() << endl;
         cout << "Elevation (in feet): " << mountain.getElevation() << endl;
         cout << "Elevation (in meters): " << mountain.toMeters() << endl;
+        cout << endl;   // Makes the code more clear & visible 
     }
 
     // Prints out elevation & name of shortest mountain
     Mountain minElevMountain = minElevation(mountainData);
-    cout << "Shortest Mountain: " << minElevMountain.getName() << endl;
+    cout << "The Shortest Mountain is: " << minElevMountain.getName() << endl;
     cout << "Elevation (in feet): " << minElevMountain.getElevation() << endl;
     cout << "Elevation (in meters): " << minElevMountain.toMeters() << endl;
 
