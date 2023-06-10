@@ -18,9 +18,8 @@ private:
     double elevation;
 
 public: 
-    Mountain(string name, string country, double elevation)  // Constructor
-        : name(name), country(country), elevation(elevation) {
-        }
+    Mountain(string name, string country, double elevation)  // Constructor initializes name, country, & elevation of Mountain object
+        : name(name), country(country), elevation(elevation) {}
     
     // Setters
     void setName(string newName) {
@@ -48,7 +47,7 @@ public:
         return elevation;
     }
 
-    double toMeters() {
+    double toMeters() {     // Convertion
         return elevation / 3.2908;
     }
 
@@ -57,10 +56,10 @@ public:
 
 // Method named minElevation that returns the minimum elevation
 Mountain minElevation (vector<Mountain> mountains) {
-    Mountain minMountain = mountains.at(0);
-    for (Mountain mountain : mountains) {
-        if (mountain.getElevation() < minMountain.getElevation()) {
-            minMountain = mountain;
+    Mountain minMountain = mountains.at(0);                         // This assumes that the 1st mountain has the minimum elevation
+    for (Mountain mountain : mountains) {                           // Iterates over each mountain
+        if (mountain.getElevation() < minMountain.getElevation()) { // If current mountain elevation is less than the minimum elevation,
+            minMountain = mountain;                                 // then we update it
         }
     }
     return minMountain;
